@@ -35,7 +35,6 @@ public class dbGOODS {
             }
         stmt.executeBatch();
         conn.setAutoCommit(true);
-
         System.out.println("Введите название товара, цену которого хотите узнать");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String nameOfGood = reader.readLine();
