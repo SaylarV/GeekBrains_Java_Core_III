@@ -1,0 +1,19 @@
+nick2 is online
+nick1: Всем привет!
+nick1: Как дела?
+nick2: Здарова!
+nick2: Всё отлично)
+nick2: Чем занимаетесь?
+nick3 is online
+nick3 is online
+nick3: Good day!
+nick3: Good day!
+nick3: Не хочу работать((
+nick3: Не хочу работать((
+nick1: и я..
+nick1: и я..
+nick2: Так а кто заставляет?
+nick2: Так а кто заставляет?
+nick3: го домой )))
+nick3: го домой )))
+nick2 is online
