@@ -20,14 +20,11 @@ public class BaseAuthService implements AuthService {
             String l;
             String p;
             String n;
-            int i = 0;
             while (rs.next()){
                 l = rs.getString("Login");
                 p = rs.getString("Password");
                 n = rs.getString("Nick");
                 entries.add(new Entry(l+"",p+"",n+""));
-                System.out.println(entries.get(i));
-                i++;
             }
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

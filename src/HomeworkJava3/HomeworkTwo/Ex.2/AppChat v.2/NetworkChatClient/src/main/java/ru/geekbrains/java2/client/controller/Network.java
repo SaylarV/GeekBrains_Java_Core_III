@@ -30,7 +30,6 @@ public class Network implements Closeable {
         this.socket = new Socket(serverAddress, port);
         this.inputStream = new DataInputStream(socket.getInputStream());
         this.outputStream = new DataOutputStream(socket.getOutputStream());
-
         Thread readServerThread = new Thread(this::readMessagesFromServer);
         readServerThread.setDaemon(true);
         readServerThread.start();
@@ -43,7 +42,7 @@ public class Network implements Closeable {
                 Message msg = Message.fromJson(message);
                 Platform.runLater(() -> messageService.processRetrievedMessage(msg));
             } catch (Exception e) {
-                System.out.println("Соединение с сервером было разорвано!");
+                System.out.println("Connection to the server was disconnected!");
                 break;
             }
         }
