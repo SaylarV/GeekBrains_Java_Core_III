@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: ru.geekbrain.java2.chat.server.main.ServerApp
+Class-Path: org.sqlite.JDBC
+
